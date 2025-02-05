@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./packages/functions/src",
+        "paths": {
+            "@services/*": [
+                "services/*"
+            ],
+            "@libs/*": [
+                "libs/*"
+            ]
+        },
+        "target": "ES2021",
+        "module": "CommonJS",
+        "outDir": "dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "Node",
+        "isolatedModules": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "packages/functions/src/**/*.ts",
+        "packages/functions/test/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
